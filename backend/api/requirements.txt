@@ -6,3 +6,7 @@ torchvision
 Pillow
 numpy
 tensorflow
+flask
+tensorflow
+tensorflow-hub
+pillow
