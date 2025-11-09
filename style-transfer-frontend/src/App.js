@@ -28,7 +28,8 @@ function App() {
     formData.append('image_size', 512);
 
     try {
-      const res = await axios.post('http://127.0.0.1:5000/generate', formData);
+      const API_URL = process.env.REACT_APP_API_URL || 'http://127.0.0.1:5000';
+      const res = await axios.post(`${API_URL}/generate`, formData);
       setOutputImage(res.data.stylized_image);
     } catch (err) {
       console.error(err);
