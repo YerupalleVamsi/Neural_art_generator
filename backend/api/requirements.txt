@@ -1,5 +1,7 @@
-flask
-tensorflow
-tensorflow-hub
-pillow
+Flask
+Flask-Cors
+gunicorn
+torch
+torchvision
+Pillow
 numpy
